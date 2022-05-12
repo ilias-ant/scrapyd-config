@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "scrapyd-config"
+version = "0.1.0"
+description = "Generate scrapyd.conf files, dynamically."
+authors = ["ilias-ant <ilias.antonopoulos@yahoo.gr>"]
+readme = "README.md"
+license = "Apache-2.0 license"
+repository = "https://github.com/ilias-ant/scrapyd-config"
+keywords = ["scrapyd", "configuration-files", "scrapy"]
+
+[tool.poetry.scripts]
+scrapyd-config = "scrapyd_config.cli:app"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.11"
+
+typer = {extras = ["all"], version = "~0.4.1"}
+PyYAML = "~6.0"
+
+[tool.poetry.dev-dependencies]
+bandit = "^1.7.4"
+black = "^22.3.0"
+isort = "^5.10.1"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
