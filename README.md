@@ -63,7 +63,7 @@ production:
     max_proc_per_cpu: 64
 
   services:
-    schedule.json: scrapyd.webservice.MyCustomProductionSchedule
+    schedule.json: scrapyd.webservice.MyCustomSchedule
     ...
 ```
 
